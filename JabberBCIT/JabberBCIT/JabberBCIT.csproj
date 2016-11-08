@@ -232,6 +232,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppSettings.config" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\forum.css" />
@@ -257,7 +258,6 @@
     </Content>
     <Content Include="Content\Home.less" />
     <Content Include="ConnectionStrings.config" />
-    <Content Include="AppSettings.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -308,8 +308,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Forum\ForumMain.cshtml" />
+    <Content Include="Views\Shared\ForumPostPartial.cshtml" />
     <Content Include="Views\Shared\Info.cshtml" />
     <Content Include="Views\Home\BasicChat.cshtml" />
+    <Content Include="Views\Forum\CreateForumPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
