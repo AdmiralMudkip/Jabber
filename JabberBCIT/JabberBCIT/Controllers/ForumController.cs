@@ -14,5 +14,23 @@ namespace JabberBCIT.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult CreateForumPost(ForumPost post)
+        {
+            //post.UserID = User.Identity.
+            post.PostTimestamp = DateTime.Now;
+            post.Votes = 0;
+
+            db.ForumPosts.Add(post);
+            db.SaveChanges();
+            return View();
+        }
+
+        public ActionResult ViewForumThread()
+        {
+
+            return View();
+        }
     }
 }
