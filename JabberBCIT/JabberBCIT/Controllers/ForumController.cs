@@ -15,6 +15,11 @@ namespace JabberBCIT.Controllers
             return View();
         }
 
+        public ActionResult CreateForumPost()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult CreateForumPost(ForumPost post)
         {
